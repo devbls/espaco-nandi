@@ -1,38 +1,41 @@
 import { IoLogoWhatsapp } from "react-icons/io";
 import { useState } from "react";
+import { IoMenuOutline } from "react-icons/io5";
+import { useLocation } from "react-router-dom";
 
 import { Drawer } from "./Drawer";
-import { IoMenuOutline } from "react-icons/io5";
 
 const PAGES = [
   {
     name: 'HOME',
-    link: '#home'
+    link: '/'
   },
   {
     name: 'CURSOS',
-    link: '#cursos'
+    link: '/cursos'
   },
   {
     name: 'PROFESSORES',
-    link: '#professores'
+    link: '/professores'
   },
   {
     name: 'ARQUIVO',
-    link: '#arquivo'
+    link: '/arquivo'
   },
   {
     name: 'VIDEOBOOK',
-    link: '#videobook'
+    link: '/videobook'
   },
   {
     name: 'CONTATOS',
-    link: '#contatos'
+    link: '/contatos'
   },
 ]
 
 export function Navbar() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
+
+  const { pathname } = useLocation();
 
   return (
     <header className="flex flex-row items-center justify-between w-full p-4 bg-black sticky">
@@ -41,7 +44,9 @@ export function Navbar() {
       </a>
       <nav className="hidden md:flex flex-row gap-4">
         {PAGES.map(page => (
-          <p className="text-white text-sm font-poppins cursor-pointer transition-all hover:opacity-85 hover:underline">{page.name}</p>
+          <a href={page.link} key={page.name}>
+            <p className={`text-white text-sm font-poppins cursor-pointer transition-all hover:opacity-85 hover:underline ${pathname === page.link && 'text-yellow-400 underline'}`}>{page.name}</p>
+          </a>
         ))}
       </nav>
       <a className="hidden md:flex" href="https://wa.me/5521970401732" target="_blank">

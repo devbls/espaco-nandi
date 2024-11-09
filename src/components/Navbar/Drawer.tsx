@@ -1,5 +1,6 @@
 import { FaWhatsapp } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
+import { useLocation } from "react-router-dom";
 
 type Props = {
   pages: {
@@ -11,6 +12,8 @@ type Props = {
 };
 
 export const Drawer = ({ pages, isOpen, setOpen }: Props) => {
+  const { pathname } = useLocation();
+  
   return (
     <div
       className={
@@ -27,10 +30,10 @@ export const Drawer = ({ pages, isOpen, setOpen }: Props) => {
         }
       >
         {pages.map(page => (
-          <a href={page.link} onClick={() => setOpen(false)}>
-            <span className="font-poppins text-2xl text-white transition-all">
+          <a href={page.link} key={page.name} onClick={() => setOpen(false)}>
+            <p className={`font-poppins text-2xl text-white transition-all ${pathname === page.link && 'text-yellow-400 underline'}`}>
               {page.name}
-            </span>
+            </p>
           </a>
         ))}
         <a href="https://wa.me/5521970401732" target="_blank">
