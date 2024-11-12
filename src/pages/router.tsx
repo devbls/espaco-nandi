@@ -8,8 +8,6 @@ import { Videobook } from "./Videobook";
 import { Contacts } from "./Contacts";
 import { NavbarWrapper } from "../components/Navbar/Wrapper";
 
-
-
 export const router = createBrowserRouter([
   {
     path: "/",

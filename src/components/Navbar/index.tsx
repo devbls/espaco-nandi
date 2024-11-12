@@ -38,9 +38,9 @@ export function Navbar() {
   const { pathname } = useLocation();
 
   return (
-    <header className="flex flex-row items-center justify-between w-full p-4 bg-black sticky">
+    <header className="flex flex-row items-center justify-between w-full h-20 p-4 bg-black sticky">
       <a href="/">
-        <img src="/assets/logo.png" alt="Logo" className="h-12" />
+        <img src="/assets/logo.png" alt="Logo" className="h-8 lg:h-12" />
       </a>
       <nav className="hidden md:flex flex-row gap-4">
         {PAGES.map(page => (
@@ -49,15 +49,19 @@ export function Navbar() {
           </a>
         ))}
       </nav>
-      <a className="hidden md:flex" href="https://wa.me/5521970401732" target="_blank">
-        <IoLogoWhatsapp size={28} color="lime" className="cursor-pointer transition-all hover:scale-110" />
-      </a>
-      <button
-        className="block md:hidden hover:opacity-75 active:opacity-60 transition"
-        onClick={() => setDrawerOpen((prevState) => !prevState)}
-      >
-        <IoMenuOutline className="text-white" size={32} />
-      </button>
+      <div>
+        <a className="hidden md:flex w-7 ml-auto" href="https://wa.me/5521970401732" target="_blank">
+          <IoLogoWhatsapp size={28} color="lime" className="cursor-pointer transition-all hover:scale-110" />
+        </a>
+      </div>
+      <div className="flex md:hidden">
+        <button
+          className="hover:opacity-75 active:opacity-60 transition ml-auto"
+          onClick={() => setDrawerOpen((prevState) => !prevState)}
+        >
+          <IoMenuOutline className="text-white" size={32} />
+        </button>
+      </div>
       <Drawer pages={PAGES} isOpen={isDrawerOpen} setOpen={setDrawerOpen} />
     </header>
   )
