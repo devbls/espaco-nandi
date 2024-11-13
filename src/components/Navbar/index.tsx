@@ -38,7 +38,7 @@ export function Navbar() {
   const { pathname } = useLocation();
 
   return (
-    <header className="flex flex-row items-center justify-between w-full h-20 p-4 bg-black sticky">
+    <header className="flex flex-row items-center justify-between w-full h-20 p-4 bg-black sticky z-50">
       <a href="/">
         <img src="/assets/logo.png" alt="Logo" className="h-8 lg:h-12" />
       </a>
