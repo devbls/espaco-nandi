@@ -35,7 +35,7 @@ export function Teachers() {
           <div className={`flex ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col gap-8 items-center`}>
             <img src={teacher.image} alt="Picture" className="h-fit min-w-[132px]" />
             <div className={`${index % 2 !== 0 && 'md:text-end'}`}>
-              <h2 className="md:text-lg font-semibold text-center">{teacher.name}</h2>
+              <h2 className={`md:text-lg font-semibold text-center ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>{teacher.name}</h2>
               <p className="md:text-base text-sm mt-4">{teacher.description}</p>
             </div>
           </div>
