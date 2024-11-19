@@ -30,7 +30,7 @@ export function Teachers() {
   return (
     <section className="min-h-[calc(100vh-6rem)] flex flex-col items-center py-20 px-12 font-poppins">
       <h1 className="text-4xl font-bold text-center">NOSSOS PROFESSORES</h1>
-      <div className="max-w-[1280px] flex flex-col gap-24 md:gap-16 mt-20">
+      <div className="max-w-[1280px] flex flex-col gap-24 md:gap-16 mt-16">
         {TEACHERS.map((teacher, index) => (
           <div className={`flex ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col gap-8 items-center`}>
             <img src={teacher.image} alt="Picture" className="h-fit min-w-[132px]" />
