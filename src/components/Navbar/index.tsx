@@ -1,4 +1,4 @@
-import { IoLogoWhatsapp } from "react-icons/io";
+import { IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io";
 import { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import { useLocation } from "react-router-dom";
@@ -49,9 +49,12 @@ export function Navbar() {
           </a>
         ))}
       </nav>
-      <div>
+      <div className="flex flex-row gap-4">
         <a className="hidden md:flex w-7 ml-auto" href="https://wa.me/5521970401732" target="_blank">
           <IoLogoWhatsapp size={28} color="lime" className="cursor-pointer transition-all hover:scale-110" />
+        </a>
+        <a className="hidden md:flex w-8 ml-auto" href="https://www.instagram.com/espaconandi/" target="_blank">
+          <IoLogoInstagram size={32} color="#E1306C" className="cursor-pointer transition-all hover:scale-110" />
         </a>
       </div>
       <div className="flex md:hidden">
