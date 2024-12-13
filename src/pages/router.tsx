@@ -1,7 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 
+
 import { Home } from "./Home";
 import { Courses } from "./Courses";
+import { Vocational } from "./Courses/Vocational";
 import { Teachers } from "./Teachers";
 import { Archive } from "./Archive";
 import { Videobook } from "./Videobook";
@@ -14,27 +16,31 @@ export const router = createBrowserRouter([
     element: <NavbarWrapper />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
       {
-        path: "/cursos",
-        element: <Courses />,
+        path: "cursos",
+        element: <Courses />
       },
       {
-        path: "/professores",
+        path: "cursos/tecnico-profissionalizante",
+        element: <Vocational />,
+      },
+      {
+        path: "professores",
         element: <Teachers />,
       },
       {
-        path: "/arquivo",
+        path: "arquivo",
         element: <Archive />,
       },
       {
-        path: "/videobook",
+        path: "videobook",
         element: <Videobook />,
       },
       {
-        path: "/contatos",
+        path: "contatos",
         element: <Contacts />,
       },
     ]
