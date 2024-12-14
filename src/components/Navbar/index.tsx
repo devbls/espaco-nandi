@@ -19,10 +19,6 @@ const PAGES = [
     link: '/professores'
   },
   {
-    name: 'ARQUIVO',
-    link: '/arquivo'
-  },
-  {
     name: 'VIDEOBOOK',
     link: '/videobook'
   },

@@ -5,7 +5,6 @@ import { Home } from "./Home";
 import { Courses } from "./Courses";
 import { Vocational } from "./Courses/Vocational";
 import { Teachers } from "./Teachers";
-import { Archive } from "./Archive";
 import { Videobook } from "./Videobook";
 import { Contacts } from "./Contacts";
 import { NavbarWrapper } from "../components/Navbar/Wrapper";
@@ -30,10 +29,6 @@ export const router = createBrowserRouter([
       {
         path: "professores",
         element: <Teachers />,
-      },
-      {
-        path: "arquivo",
-        element: <Archive />,
       },
       {
         path: "videobook",
