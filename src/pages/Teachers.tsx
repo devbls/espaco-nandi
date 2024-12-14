@@ -28,7 +28,7 @@ const TEACHERS = [
 
 export function Teachers() {
   return (
-    <section className="min-h-[calc(100vh-6rem)] flex flex-col items-center py-20 px-12 font-poppins">
+    <section className="min-h-[calc(100vh-9rem)] flex flex-col items-center py-20 px-12 font-poppins">
       <h1 className="text-4xl font-bold text-center animate-fadeIn">NOSSOS PROFESSORES</h1>
       <div className="max-w-[1280px] flex flex-col gap-24 md:gap-16 mt-16">
         {TEACHERS.map((teacher, index) => (

@@ -1,6 +1,6 @@
 export function Home() {
   return (
-    <div className="flex flex-col justify-center min-h-[calc(100vh-6rem)] w-full bg-gray-200 font-poppins">
+    <div className="flex flex-col justify-center min-h-[calc(100vh-9rem)] w-full bg-gray-200 font-poppins">
       <section className="w-full h-[calc(100vh-5rem)] flex flex-col items-center justify-center relative bg-[url('/assets/background.jpg')] bg-no-repeat bg-cover bg-center z-0">
         <div className="h-full w-full bg-black bg-opacity-85 absolute top-0 bottom-0 left-0 right-0 z-10">{' '}</div>
         <h2 className="md:block hidden text-white text-center lg:text-[2vw] md:text-3xl text-2xl font-semibold z-20 animate-fadeInLeft">ESPAÇO NANDI | FORMAÇÃO DE ATORES</h2>
