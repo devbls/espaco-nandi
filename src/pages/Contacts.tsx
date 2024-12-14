@@ -2,7 +2,7 @@ import { Map, Marker } from "@vis.gl/react-google-maps";
 
 export function Contacts() {
   return (
-    <section className="min-h-[calc(100vh-9rem)] flex flex-col items-center py-20 px-12 font-poppins">
+    <section className="min-h-[calc(100vh-9rem)] flex flex-col items-center py-16 px-8 font-poppins">
       <p className="text-center text-sm sm:text-base animate-fadeIn">O Espaço Nandi fica no shopping <b>Map Band</b>, na Estrada dos Bandeirantes 8591, sala 327.</p>
       <p className="text-center text-sm sm:text-base mt-1 animate-fadeIn">Jacarepaguá. Rio de Janeiro. RJ Cep 22783-115 (na altura do Riocentro, no shopping do McDonald's)</p>
       <br />
