@@ -1,4 +1,4 @@
-import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { useLocation } from "react-router-dom";
 
@@ -36,12 +36,20 @@ export const Drawer = ({ pages, isOpen, setOpen }: Props) => {
             </p>
           </a>
         ))}
-        <a href="https://wa.me/5521970401732" target="_blank">
-          <button className="flex flex-row items-center gap-2 h-10 mt-8 bg-green rounded-full px-4 text-white font-poppins">
-            <FaWhatsapp size={20} />
-            ENTRE EM CONTATO
-          </button>
-        </a>
+        <div className="flex flex-col gap-4 mt-8">
+          <a href="https://wa.me/5521970401732" target="_blank">
+            <button className="flex flex-row items-center gap-2 h-10 bg-green rounded-full px-4 text-white font-poppins">
+              <FaWhatsapp size={20} />
+              ENTRE EM CONTATO
+            </button>
+          </a>
+          <a href="https://www.instagram.com/espaconandi/" target="_blank">
+            <button className="flex flex-row items-center gap-2 h-10 bg-pink rounded-full px-4 text-white font-poppins">
+              <FaInstagram size={20} />
+              SIGA NO INSTAGRAM
+            </button>
+          </a>
+        </div>
       </nav>
       <button
         className={`w-8 h-8 absolute top-6 right-4 transition-all duration-500 ${

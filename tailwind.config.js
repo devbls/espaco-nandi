@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        green: '#25D366'
+        green: '#25D366',
+        pink: '#E1306C'
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif']
