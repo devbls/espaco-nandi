@@ -3,10 +3,10 @@ export function Home() {
     <div className="flex flex-col justify-center min-h-[calc(100vh-6rem)] w-full bg-gray-200 font-poppins">
       <section className="w-full h-[calc(100vh-5rem)] flex flex-col items-center justify-center relative bg-[url('/assets/background.jpg')] bg-no-repeat bg-cover bg-center z-0">
         <div className="h-full w-full bg-black bg-opacity-85 absolute top-0 bottom-0 left-0 right-0 z-10">{' '}</div>
-        <h2 className="md:block hidden text-white text-center lg:text-[2vw] md:text-3xl text-2xl font-semibold z-20">ESPAÇO NANDI | FORMAÇÃO DE ATORES</h2>
-        <h2 className="md:hidden block text-white text-center text-2xl font-semibold z-20">ESPAÇO NANDI <br /> FORMAÇÃO DE ATORES</h2>
-        <img src="/assets/cover.jpg" alt="Background cover" className="w-[85%] md:w-fit mt-16 z-20" />
-        <p className="max-w-[720px] xl:text-[1vw] sm:text-base text-sm mt-12 text-white font-semibold z-20 text-center px-6">Escola de teatro fundada em 2014 no Rio de janeiro pela renomada atriz Ittala Nandi. O Espaço Nandi Formação de Atores oferece curso de teatro profissionalizante com DRT de ator em 18 meses e cursos livres de teatro, TV, cinema e dublagem, para todos que buscam aperfeiçoamento.</p>
+        <h2 className="md:block hidden text-white text-center lg:text-[2vw] md:text-3xl text-2xl font-semibold z-20 animate-fadeInLeft">ESPAÇO NANDI | FORMAÇÃO DE ATORES</h2>
+        <h2 className="md:hidden block text-white text-center text-2xl font-semibold z-20 animate-fadeInLeft">ESPAÇO NANDI <br /> FORMAÇÃO DE ATORES</h2>
+        <img src="/assets/cover.jpg" alt="Background cover" className="w-[85%] md:w-fit mt-16 z-20 animate-fadeInLeft" />
+        <p className="max-w-[720px] xl:text-[1vw] sm:text-base text-sm mt-12 text-white font-semibold z-20 text-center px-6 animate-fadeInLeft">Escola de teatro fundada em 2014 no Rio de janeiro pela renomada atriz Ittala Nandi. O Espaço Nandi Formação de Atores oferece curso de teatro profissionalizante com DRT de ator em 18 meses e cursos livres de teatro, TV, cinema e dublagem, para todos que buscam aperfeiçoamento.</p>
       </section>
       <section className="flex flex-col items-center justify-center min-h-screen sm:gap-24 gap-12 py-16">
         <h2 className="text-center lg:text-[2vw] md:text-3xl text-2xl font-semibold">NOSSA HISTÓRIA</h2>

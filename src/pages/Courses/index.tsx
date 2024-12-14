@@ -16,10 +16,10 @@ const COURSES = [
 export function Courses() {
   return (
     <section className="min-h-[calc(100vh-9rem)] flex flex-col items-center py-16 px-8 font-poppins">
-      <h1 className="text-4xl font-bold text-center">NOSSOS CURSOS</h1>
+      <h1 className="text-4xl font-bold text-center animate-fadeIn">NOSSOS CURSOS</h1>
       <div className="flex md:flex-row flex-col flex-wrap gap-12 mt-16">
         {COURSES.map(course => (
-          <div className="flex flex-col md:w-[40vw] bg-gray-100 p-4 rounded">
+          <div className="flex flex-col md:w-[40vw] bg-gray-100 p-4 rounded animate-fadeInBottom">
             <h2>{course.name}</h2>
             {course.duration && <p>{course.duration}</p>}
             <hr className="h-[2px] bg-gray-400 my-1" />
