@@ -7,7 +7,9 @@ export function NavbarWrapper() {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <main className="mt-20">
+        <Outlet />
+      </main>
       <Footer />
     </>
   )

@@ -2,7 +2,7 @@ import Carousel from 'react-multi-carousel';
 import YouTube, { YouTubeEvent } from 'react-youtube';
 import 'react-multi-carousel/lib/styles.css';
 
-const VIDEOS = [
+const VIDEO_IDS = [
   'evGSCoYF6Xk',
   '97GXyM5OcwE',
   '48GlsV0RHKo',
@@ -14,7 +14,7 @@ const VIDEOS = [
   '9Zcml8BGerg',
   'fVjrWTn3rBw',
   'U7PrRXcDmZo'
-]
+];
 
 const responsive = {
   desktop: {
@@ -66,7 +66,7 @@ export function Videobook() {
           containerClass="carousel-container"
           removeArrowOnDeviceType={["mobile"]}
         >
-          {VIDEOS.map(videoId => (
+          {VIDEO_IDS.map(videoId => (
             <div className="flex items-center justify-center w-full">
               <YouTube videoId={videoId} opts={opts} onReady={(event: YouTubeEvent) => event.target.pauseVideo()} />
             </div>
@@ -74,7 +74,7 @@ export function Videobook() {
         </Carousel>
       </div>
       <div className="flex flex-col md:hidden gap-6">
-        {VIDEOS.map(videoId => (
+        {VIDEO_IDS.map(videoId => (
           <div className="flex items-center justify-center w-full">
             <YouTube videoId={videoId} opts={optsMobile} onReady={(event: YouTubeEvent) => event.target.pauseVideo()} />
           </div>
