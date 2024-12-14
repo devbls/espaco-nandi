@@ -67,7 +67,7 @@ export function Videobook() {
           removeArrowOnDeviceType={["mobile"]}
         >
           {VIDEO_IDS.map(videoId => (
-            <div className="flex items-center justify-center w-full">
+            <div key={videoId} className="flex items-center justify-center w-full">
               <YouTube videoId={videoId} opts={opts} onReady={(event: YouTubeEvent) => event.target.pauseVideo()} />
             </div>
           ))}
@@ -75,7 +75,7 @@ export function Videobook() {
       </div>
       <div className="flex flex-col md:hidden gap-6">
         {VIDEO_IDS.map(videoId => (
-          <div className="flex items-center justify-center w-full">
+          <div key={videoId} className="flex items-center justify-center w-full">
             <YouTube videoId={videoId} opts={optsMobile} onReady={(event: YouTubeEvent) => event.target.pauseVideo()} />
           </div>
         ))}
