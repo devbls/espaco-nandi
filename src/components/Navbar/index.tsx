@@ -35,27 +35,28 @@ export function Navbar() {
 
   return (
     <header className="flex flex-row items-center justify-between w-full h-20 p-4 bg-black fixed top-0 z-50">
-      <a href="/">
+      <a href="/" aria-label="Logo">
         <img src="/assets/logo.webp" alt="Logo" className="h-8 lg:h-12" />
       </a>
       <nav className="hidden md:flex flex-row gap-4">
         {PAGES.map(page => (
-          <a href={page.link} key={page.name}>
+          <a href={page.link} key={page.name} aria-label="Logo">
             <p className={`text-white text-sm font-poppins cursor-pointer transition-all hover:opacity-85 hover:underline ${pathname === page.link && 'text-yellow-400 underline'}`}>{page.name}</p>
           </a>
         ))}
       </nav>
       <div className="flex flex-row gap-4">
-        <a className="hidden md:flex w-7 ml-auto" href="https://wa.me/5521970401732" target="_blank">
+        <a className="hidden md:flex w-7 ml-auto" href="https://wa.me/5521970401732" target="_blank" aria-label="Access Whatsapp">
           <IoLogoWhatsapp size={28} color="lime" className="cursor-pointer transition-all hover:scale-110" />
         </a>
-        <a className="hidden md:flex w-8 ml-auto" href="https://www.instagram.com/espaconandi/" target="_blank">
+        <a className="hidden md:flex w-8 ml-auto" href="https://www.instagram.com/espaconandi/" target="_blank" aria-label="Access Instagram">
           <IoLogoInstagram size={32} color="#E1306C" className="cursor-pointer transition-all hover:scale-110" />
         </a>
       </div>
       <div className="flex md:hidden">
         <button
           className="hover:opacity-75 active:opacity-60 transition ml-auto"
+          aria-label="Drawer button"
           onClick={() => setDrawerOpen((prevState) => !prevState)}
         >
           <IoMenuOutline className="text-white" size={32} />

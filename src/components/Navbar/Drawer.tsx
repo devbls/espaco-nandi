@@ -30,20 +30,20 @@ export const Drawer = ({ pages, isOpen, setOpen }: Props) => {
         }
       >
         {pages.map(page => (
-          <a href={page.link} key={page.name} onClick={() => setOpen(false)}>
+          <a href={page.link} key={page.name} aria-label={`Navigate to ${page.name}`} onClick={() => setOpen(false)}>
             <p className={`font-poppins text-2xl text-white transition-all ${pathname === page.link && 'text-yellow-400 underline'}`}>
               {page.name}
             </p>
           </a>
         ))}
         <div className="flex flex-col gap-4 mt-8">
-          <a href="https://wa.me/5521970401732" target="_blank">
+          <a href="https://wa.me/5521970401732" target="_blank" aria-label="Access Whatsapp">
             <button className="flex flex-row items-center gap-2 h-10 bg-green rounded-full px-4 text-white font-poppins">
               <FaWhatsapp size={20} />
               ENTRE EM CONTATO
             </button>
           </a>
-          <a href="https://www.instagram.com/espaconandi/" target="_blank">
+          <a href="https://www.instagram.com/espaconandi/" target="_blank" aria-label="Access Instagram">
             <button className="flex flex-row items-center gap-2 h-10 bg-pink rounded-full px-4 text-white font-poppins">
               <FaInstagram size={20} />
               SIGA NO INSTAGRAM
@@ -55,6 +55,7 @@ export const Drawer = ({ pages, isOpen, setOpen }: Props) => {
         className={`w-8 h-8 absolute top-6 right-4 transition-all duration-500 ${
           isOpen ? "opacity-100" : "opacity-0"
         }`}
+        aria-label="Close drawer"
         onClick={() => {
           setOpen(false);
         }}

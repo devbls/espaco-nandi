@@ -24,7 +24,7 @@ export function Courses() {
             {course.duration && <p>{course.duration}</p>}
             <hr className="h-[2px] bg-gray-400 my-1" />
             <p className="text-sm mb-4">{course.description}</p>
-            <a href={course.link} className="mt-auto">
+            <a href={course.link} className="mt-auto" aria-label="Access course details">
               <button className="w-fit h-6 mx-auto bg-yellow-300 rounded-xl px-4 text-sm font-semibold transition-all hover:bg-yellow-400">SAIBA MAIS</button>
             </a>
           </div>
