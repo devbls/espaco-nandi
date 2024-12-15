@@ -1,7 +1,7 @@
 export function Vocational() {
   return (
     <article className="flex flex-col items-center min-h-[calc(100vh-9rem)] w-full bg-gray-200 font-poppins py-16">
-      <section className="w-[80vw] h-[60vh] flex flex-col items-center justify-center relative bg-[url('/assets/aula-de-teatro.jpg')] bg-no-repeat bg-cover z-0">
+      <section className="w-[80vw] h-[60vh] flex flex-col items-center justify-center relative bg-[url('/assets/aula-de-teatro.webp')] bg-no-repeat bg-cover z-0">
         <div className="h-full w-full bg-black bg-opacity-60 absolute top-0 bottom-0 left-0 right-0 z-10">{' '}</div>
         <h1 className="text-3xl md:text-4xl text-white font-bold text-center animate-fadeIn z-20 px-4">CURSO DE TEATRO PROFISSIONALIZANTE</h1>
         <h2 className="text-2xl md:text-3xl text-white text-center animate-fadeIn z-20 mt-6">DRT definitivo em 18 meses</h2>
