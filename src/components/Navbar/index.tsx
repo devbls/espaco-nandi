@@ -8,7 +8,7 @@ import { Drawer } from "./Drawer";
 const PAGES = [
   {
     name: 'HOME',
-    link: '/home'
+    link: '/'
   },
   {
     name: 'CURSOS',
