@@ -36,7 +36,7 @@ export function Navbar() {
   return (
     <header className="flex flex-row items-center justify-between w-full h-20 p-4 bg-black fixed top-0 z-50">
       <a href="/">
-        <img src="/assets/logo.png" alt="Logo" className="h-8 lg:h-12" />
+        <img src="/assets/logo.webp" alt="Logo" className="h-8 lg:h-12" />
       </a>
       <nav className="hidden md:flex flex-row gap-4">
         {PAGES.map(page => (
