@@ -41,7 +41,7 @@ export function Navbar() {
       <nav className="hidden md:flex flex-row gap-4">
         {PAGES.map(page => (
           <a href={page.link} key={page.name}>
-            <p className={`text-white text-sm font-poppins cursor-pointer transition-all hover:opacity-85 hover:underline ${pathname.includes(page.link) && 'text-yellow-400 underline'}`}>{page.name}</p>
+            <p className={`text-white text-sm font-poppins cursor-pointer transition-all hover:opacity-85 hover:underline ${pathname === page.link && 'text-yellow-400 underline'}`}>{page.name}</p>
           </a>
         ))}
       </nav>
